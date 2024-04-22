@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\WF\\QuanLyQuanAnVat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{44DDB118-7CC3-4BEF-8019-12FC6CADE3AA}|QuanLyQuanAnVat.csproj|d:\\wf\\quanlyquananvat\\fmanhinhquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44DDB118-7CC3-4BEF-8019-12FC6CADE3AA}|QuanLyQuanAnVat.csproj|solutionrelative:fmanhinhquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44DDB118-7CC3-4BEF-8019-12FC6CADE3AA}|QuanLyQuanAnVat.csproj|d:\\wf\\quanlyquananvat\\dao\\banandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44DDB118-7CC3-4BEF-8019-12FC6CADE3AA}|QuanLyQuanAnVat.csproj|solutionrelative:dao\\banandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44DDB118-7CC3-4BEF-8019-12FC6CADE3AA}|QuanLyQuanAnVat.csproj|d:\\wf\\quanlyquananvat\\dto\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44DDB118-7CC3-4BEF-8019-12FC6CADE3AA}|QuanLyQuanAnVat.csproj|solutionrelative:dto\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Table.cs",
+              "DocumentMoniker": "D:\\WF\\QuanLyQuanAnVat\\DTO\\Table.cs",
+              "RelativeDocumentMoniker": "DTO\\Table.cs",
+              "ToolTip": "D:\\WF\\QuanLyQuanAnVat\\DTO\\Table.cs",
+              "RelativeToolTip": "DTO\\Table.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA5wBYAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:43:20.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BanAnDAO.cs",
+              "DocumentMoniker": "D:\\WF\\QuanLyQuanAnVat\\DAO\\BanAnDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\BanAnDAO.cs",
+              "ToolTip": "D:\\WF\\QuanLyQuanAnVat\\DAO\\BanAnDAO.cs",
+              "RelativeToolTip": "DAO\\BanAnDAO.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwBUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:37:58.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "fManHinhQuanLy.cs",
+              "DocumentMoniker": "D:\\WF\\QuanLyQuanAnVat\\fManHinhQuanLy.cs",
+              "RelativeDocumentMoniker": "fManHinhQuanLy.cs",
+              "ToolTip": "D:\\WF\\QuanLyQuanAnVat\\fManHinhQuanLy.cs",
+              "RelativeToolTip": "fManHinhQuanLy.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAYwCAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:34:52.314Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

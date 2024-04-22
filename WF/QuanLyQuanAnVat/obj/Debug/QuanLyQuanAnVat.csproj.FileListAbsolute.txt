@@ -1,0 +1,13 @@
+D:\WF\QuanLyQuanAnVat\bin\Debug\QuanLyQuanAnVat.exe.config
+D:\WF\QuanLyQuanAnVat\bin\Debug\QuanLyQuanAnVat.exe
+D:\WF\QuanLyQuanAnVat\bin\Debug\QuanLyQuanAnVat.pdb
+D:\WF\QuanLyQuanAnVat\obj\Debug\QuanLyQuanAnVat.csproj.AssemblyReference.cache
+D:\WF\QuanLyQuanAnVat\obj\Debug\QuanLyQuanAnVat.Properties.Resources.resources
+D:\WF\QuanLyQuanAnVat\obj\Debug\QuanLyQuanAnVat.csproj.GenerateResource.cache
+D:\WF\QuanLyQuanAnVat\obj\Debug\QuanLyQuanAnVat.csproj.CoreCompileInputs.cache
+D:\WF\QuanLyQuanAnVat\obj\Debug\QuanLyQuanAnVat.exe
+D:\WF\QuanLyQuanAnVat\obj\Debug\QuanLyQuanAnVat.pdb
+D:\WF\QuanLyQuanAnVat\obj\Debug\QuanLyQuanAnVat.fManHinhQuanLy.resources
+D:\WF\QuanLyQuanAnVat\obj\Debug\QuanLyQuanAnVat.fDangNhap.resources
+D:\WF\QuanLyQuanAnVat\obj\Debug\QuanLyQuanAnVat.fThongTinCaNhan.resources
+D:\WF\QuanLyQuanAnVat\obj\Debug\QuanLyQuanAnVat.fAdmin.resources
