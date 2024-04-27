@@ -12,58 +12,6 @@ matkhau NVARCHAR(100) NOT NULL,
 loai INT NOT NULL default 0 -- 1: anh chu dep trai || 0 nhan vien
 )
 GO 
-
-CREATE TABLE DanhMucMonAn
-(
-id INT IDENTITY PRIMARY KEY,
-ten NVARCHAR (100)  NOT NULL
-)
-GO
-
-CREATE TABLE MonAn
-(
-id INT IDENTITY PRIMARY KEY,
-ten NVARCHAR(100) NOT NULL,
-gia float NOT NULL,
-iddanhmucmonan int NOT NULL 
-
-FOREIGN KEY (iddanhmucmonan) REFERENCES dbo.DanhMucMonAn(id)
-)
-GO
-
-CREATE TABLE Ban
-(
-id INT PRIMARY KEY,
-ten NVARCHAR(100) not null,
-trangthai NVARCHAR (100) not null DEFAULT N'Trống'--trong || co nguoi
-)
-GO
-
-CREATE TABLE HoaDon
-(
-id INT IDENTITY PRIMARY KEY,
-ngaykhachvao DATE default getdate(),
-ngaykhachra date,
-idban int,
-trangthai nvarchar not null default 0 ,--1:da thanh toan || 0 chuaw thanh toan
-tonggia float
-
-FOREIGN KEY (idban) REFERENCES dbo.Ban(id)
-)
-GO
-
-CREATE TABLE ThongTinHoaDon
-(
-id INT IDENTITY PRIMARY KEY,
-idhoadon int  not null,
-idmonan int not null,
-soluongmonan int not null default 0,
-
-FOREIGN KEY (idhoadon) REFERENCES dbo.HoaDon(id),
-FOREIGN KEY (idmonan) REFERENCES dbo.MonAn(id)
-)
-
-
 INSERT INTO dbo.TaiKhoan
 (tendangnhap,
  tenhienthi,
@@ -86,6 +34,121 @@ VALUES   (N'staff',
 		  N'123',
 		  N'0'
          )
+
+CREATE TABLE DanhMucMonAn
+(
+id INT IDENTITY PRIMARY KEY,
+ten NVARCHAR (100)  NOT NULL
+)
+GO
+insert into DanhMucMonAn (id , ten)
+values (1,N'Mì'),
+       (2,N'Lẩu'),
+	   (3,N'Khai vị'),
+	   (4,N'Giải khát'),
+	   (5,N'Món thêm mì'),
+	   (6,N'Món thêm lẩu');
+
+CREATE TABLE MonAn
+(
+id INT IDENTITY PRIMARY KEY,
+ten NVARCHAR(100) NOT NULL,
+gia float NOT NULL,
+iddanhmucmonan int NOT NULL 
+
+FOREIGN KEY (iddanhmucmonan) REFERENCES dbo.DanhMucMonAn(id)
+)
+GO
+insert into MonAn (id,ten,gia,iddanhmucmonan)
+values  (1,N'Mì Kim chi đặc biệt',69000,1),
+		(2,N'Mì Soyum đặc biệt',69000,1),
+		(3,N'Mì Kim chi hải sản',62000,1),
+		(4,N'Mì Kim chi cá',49000,1),
+		(5,N'Mì Kim chi bò Mỹ',55000,1),
+		(6,N'Mì Kim chi gà',59000,1),
+		(7,N'Mì Soyum hải sản',62000,1),
+		(8,N'Mì Soyum bò Mỹ',55000,1),
+		(9,N'Mì Sincay bò Mỹ',59000,1),
+		(10,N'Mì Soyum heo gà',55000,1),
+		(11,N'Mì Soyum heo',55000,1),
+		(12,N'Mì Sincay hải sản',62000,1),
+		(13,N'Lẩu 2 ngăn',199000,2),
+		(14,N'Lẩu Tokbokki bò Mỹ (2 người)',199000,2),
+		(15,N'Lẩu Tokbokki hải sản (2 người)',199000,2),
+		(16,N'Kimbap chiên',45000,3),
+		(17,N'Khoai tây chiên',32000,3),
+		(18,N'Mandu chiên xốt cay',35000,3),
+		(19,N'Phô mai viên',29000,3),
+		(20,N'Bánh bạch tuộc',39000,3),
+		(21,N'Xiên bánh cá hầm',39000,3),
+		(22,N'Cơm nắm',39000,3),
+		(23,N'Đậu hũ xốt mè rang',39000,3),
+		(24,N'Bánh bao Hàn Quốc nhân Heo Hầm',28000,3),
+		(25,N'Bánh bao Hàn Quốc nhân Dồi Sụn',30000,3),
+		(26,N'Bánh bao Hàn Quốc nhân Bò Bulgogi',32000,3),
+		(27,N'Soda dâu dưa lưới',35000,4),
+		(28,N'Dưa lưới thơm hạt chia',35000,4),
+		(29,N'Soda dừa dứa đác thơm',35000,4),
+		(30,N'Nước gạo Hàn Quốc',35000,4),
+		(31,N'Trà đào Sasin',29000,4),
+		(32,N'Trà dâu hoa hồng',29000,4),
+		(33,N'Trà sữa Matcha',29000,4),
+		(34,N'Trà sữa Sasin',29000,4),
+		(35,N'Thịt heo cuộn',29000,5),
+		(36,N'Trứng ngâm tương',12000,5),
+		(37,N'Bò Mỹ',9000,5),
+		(38,N'Tôm',9000,5),
+		(39,N'Cá viên',6000,5),
+		(40,N'Mực',9,0005),
+		(41,N'Xúc xích',9000,5),
+		(42,N'Bắp cải tím',6000,5),
+		(43,N'Combo thịt (để sống)',69000,6),
+		(44,N'Combo hải sản (để sống)',79000,6),
+		(45,N'Combo rau nấm (để sống)',45000,6),
+		(46,N'Combo Tokbokki thêm lẩu (để sống)',49000,6),
+		(47,N'Tôm thêm lẩu (để sống)',45000,6);
+
+CREATE TABLE Ban
+(
+id INT PRIMARY KEY,
+ten NVARCHAR(100) not null,
+trangthai NVARCHAR (100) not null DEFAULT N'Trống'--trong || co nguoi
+)
+GO
+
+CREATE TABLE HoaDon
+(
+id INT IDENTITY PRIMARY KEY,
+ngaykhachvao DATE default getdate(),
+ngaykhachra date,
+idban int,
+trangthai int  not null default 0 ,--1:da thanh toan || 0 chua thanh toan
+
+FOREIGN KEY (idban) REFERENCES dbo.Ban(id)
+)
+GO
+insert into HoaDon(id,ngaykhachvao,ngaykhachra,idban,trangthai,tonggia)
+
+values		(1,GETDATE(),null,1,0,0),
+			(2,GETDATE(),GETDATE(),1,1,0),
+			(3,GETDATE(),null,1,0,0);
+
+CREATE TABLE ThongTinHoaDon
+(
+id INT IDENTITY PRIMARY KEY,
+idhoadon int  not null,
+idmonan int not null,
+soluongmonan int not null default 0,
+
+FOREIGN KEY (idhoadon) REFERENCES dbo.HoaDon(id),
+FOREIGN KEY (idmonan) REFERENCES dbo.MonAn(id)
+)
+insert into ThongTinHoaDon(id,idhoadon,idmonan,soluongmonan)
+values(1,1,1,3),
+      (2,3,5,1),
+	  (3,2,3,2);
+
+
 select *from TaiKhoan
 GO 
 
@@ -131,8 +194,28 @@ go
 
 
 
-
+select * from Ban 
 select * from HoaDon
 select * from ThongTinHoaDon
 select * from MonAn
 select * from DanhMucMonAn
+
+SET IDENTITY_INSERT DanhMucMonAn ON
+
+
+SET IDENTITY_INSERT HoaDon OFF
+
+
+	   SET IDENTITY_INSERT ThongTinHoaDon ON
+
+ALTER TABLE HoaDon
+ALTER COLUMN trangthai int ;
+		
+drop database QuanLyQuanAnVat		
+		
+
+
+
+
+      
+
